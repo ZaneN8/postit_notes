@@ -1,0 +1,10 @@
+<h1>Edit <%= @note.header %></h1>
+<%= form_for @note do |f| %>
+  <%= f.label :header %>
+  <%= f.text_field :header %>
+  
+  <%= f.label :body %>
+  <%= f.text_area :body %>
+
+  <%= f.submit %>
+<% end %>
